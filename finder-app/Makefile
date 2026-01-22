@@ -2,7 +2,7 @@ SRCS := writer.c
 OBJS := $(SRCS:.c=.o)
 TARGET := writer
 CFLAGS := -Wall -Wextra -Werror -g
-CC := gcc
+CC := $(CROSS_COMPILE)gcc
 
 .PHONY: all clean
 all: $(TARGET)
